@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="yourfolder/icofonts.css">
+    </head>
+    <body>
+       <h1>Hello JS</h1>
+       <script>
+        //Comparison Operators
+   // == equal to
+   // != Not equal to 
+   // < Less than
+   // >greater than
+   //<= lesss than or equal to
+   // >= greater than or equal to
+
+  // let x=10;
+ //  let y=5;
+
+   /* console.log(x==y);
+   console.log(x!=y);
+   console.log(x>y);
+   console.log(x<y);
+   console.log(x<=y);
+   console.log(x>=y); */
+   
+
+   ///Logical Operators
+   // And &&
+   //Or ||
+  /*  let z=((x!=y) || (x>y)  || (x!=3) )
+   console.log(z); */
+
+   /* let z=(((x!=y) && (x>y))  || (x==3) )
+   console.log(z); 
+   document.getElementById("hhhh");
+   
+
+ */
+
+ /* let hour = prompt("whats the time now?");
+ hour= parseInt(hour);
+ if(hour >=6 && hour < 12){
+    document.write("Good morning");
+ }else
+ if(hour >=12 && hour<=18 ){
+    alert("Good afternoon");
+ }else
+ alert("Good evening"); */
+
+let arr=["Hello","World","How", "is","everyone"];
+let arr2=["Mango",5,"Jack",4.0,false,["Hey","there"]];
+
+//document.write(arr[0])
+document.write("<br>")
+document.write(arr[2])
+
+arr[0]="Steve";
+document.write(arr[0])
+document.write(arr[5])
+
+let emptyArray=[34,67,9,68,90,45,2300,1000,23]
+
+document.write("<br>")
+
+document.write(emptyArray)
+document.write("<br>")
+document.write(emptyArray.toString())
+document.write("<br>")
+
+document.write("Array one has "+arr.length+" elements");
+
+
+document.write("<br>")
+let counter=1;
+/* for(let i=0;i<emptyArray.length;i++){
+  
+   document.write(emptyArray[i]);
+   
+   if(counter===3){
+      document.write("<br>")
+      counter=1;
+   }else{
+      counter++;
+   }
+   
+} */
+//document.write(emptyArray.join(" <br> "))
+/* arr.push("Banana","For", "Some "," People");
+arr.shift();
+arr.pop(); */
+/* let arr3=arr.concat(arr2);
+arr3.sort();
+arr3.reverse();
+
+//arr.splice(1,2,"Banana","Oranges")
+arr4=arr.slice(3,5) */
+document.write("<br>")
+document.write(emptyArray);
+
+
+let steve=emptyArray[0];
+for(let i=0;i<emptyArray.length;i++){
+if(emptyArray[i]>steve){
+   steve=emptyArray[i];
+}
+}
+document.write("<br>")
+document.write("The maximum value is "+steve);
+
+let min=emptyArray[0];
+for(let i=0;i<emptyArray.length;i++){
+if(emptyArray[i]<min){
+   min=emptyArray[i];
+}
+}
+document.write("<br>")
+document.write("The minimum value is "+min);
+
+
+let sam=[39, 45, 59, 789, 4567, 32];
+document.write(sam)
+
+let max = sam[0];
+for(f=0; f<sam.length;f++){
+   if(sam[f]>max){
+      max=sam[f]
+   }
+}
+
+document.write("<br>")
+document.write("The maximum value is "+max);
+
+let smallest = sam[0];
+for(f=0; f>sam.length; f++){
+   if(sam[f]<smallest){
+      smallest=sam[f]
+   }
+}
+document.write("<br>")
+document.write("The minimum value is "+smallest);
+sam.push("mango")
+
+// let kioo=[23, 45, 67, 87, 79 ,234, 456, 6789, 50]
+// let k=kioo[0];
+// for(k=0; k<kioo.length; k++){
+//    if(kioo[0]<k){
+//       k=kioo[0]
+//    }
+// }
+// document.write("k is equal to " + k);
+// document.write(kioo[0]);
+
+
+
+
+let today =new Date();
+let month =getMonth()+1;
+let day =getDay();
+let year =getFullYear();
+today= month+"-"+day+"-"+year;
+document.write("today is " + today);
+
+
+
+
+
+
+   </script>
+//     </body>
+// </html>
+
+
+
